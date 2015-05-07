@@ -18,7 +18,7 @@ const int N = 9;          // grid size 9*9
 const int BOXSIZE = 3;    // size of a box 3*3
 
 // function to find unassigned location
-bool findUnassigned(int grid[N][N],int &row,int &column){  // passing by reference because it changes values from where it is being called
+bool findUnassigned(int grid[N][N],int &row,int &column){  
 for (row = 0; row < N; row++)
     for (column = 0; column < N; column++)
         if (grid[row][column] == UNASSIGNED)
